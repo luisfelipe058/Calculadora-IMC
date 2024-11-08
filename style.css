@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f1f1f1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    padding: 30px;
+    text-align: center;
+    background-image: url(https://cdn.pixabay.com/photo/2020/06/07/12/01/currants-5270094_640.jpg);
+    /* background-color: rgb(21, 163, 219); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    /* position: fixed top: 0; */
+    width: 100%;
+    background-color:#0f0f0f94;
+    border-radius: 15px;
+    padding: 15px;
+    
+}
+
+nav ol {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+nav ol li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 30px;
+    transition: color 0.4s;
+    
+}
+
+nav ol li a:hover {
+    color: #ff5100;
+}
+
+h2{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 35px;
+    margin-bottom: 60px;
+}
+
+#home{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+img{
+    border-radius: 15px;
+    height: 340px;
+    margin-bottom: 40px;
+    box-shadow: 8px 8px 10px #1f1f1f;
+    
+}
+
+.lista1{
+    font-size: 28px;
+    margin-top: 20px;
+    
+}
+
+h1{
+    text-align: center;
+    /* margin-bottom: 20px; */
+    margin-top: 30px;
+    
+    /* font-size: 35px; */
+}
+
+#services{
+    /* background-color: #720905; */
+}
+
+.imc1{
+    font-size: 30px;
+    padding: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+
+p{
+    text-align: center;
+    font-size: 23px;
+}
+
+footer{
+    background-color:#141414; 
+    color: #ffffff;
+    padding: 25px;
+    text-align: center;
+    
+}
+
+footer ul{
+    list-style-type: none;
+}
+
+footer p{
+    margin-top: 10px;
+    font-size: 15px;
+}
+

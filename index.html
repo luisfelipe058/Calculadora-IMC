@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ol>
+                <li><a href="#home">Dicas</a></li>
+                <li><a href="#services">IMC</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ol>
+        </nav>
+    </header>
+
+    <h2>Dicas para um IMC saudável</h2>
+    <section id="home">
+        
+
+
+
+        <div class="container1"></div>
+        <div class="box1">
+            <ul class="lista1">
+                <li>Perder peso com saúde para um IMC saudável</li>
+                <li>Aposte em alimentos que queimam a gordura</li>
+                <li>Coma alimentos que desincham</li>
+                <li>Aumente a saciedade</li>
+                <li>Consuma alimentos que aceleram metabolismo</li>
+                <li>Invista em um prato equilibrado e variado</li>
+                <li>Pratique exercícios que queimam gordura</li>
+                <li>Diminua o consumo de sal e açúcar
+                </li>
+
+            </ul>
+        </div>
+        <img src="https://cdn.pixabay.com/photo/2016/02/09/17/02/apple-1189943_640.jpg" alt="">
+        </div>
+
+
+    </section>
+
+
+
+
+    </section>
+
+
+
+    <section id="services">
+
+        <h1>Índice de Massa Corporal</h1>
+        <section class="imc1">
+            <!-- <form action="#"> -->
+            <label for="altura">Altura (cm):</label>
+            <input type="number" name="altura" id="altura">
+
+            <label for="peso">Peso (kg):</label>
+            <input type="number" name="peso" id="peso">
+
+            <button onclick="calcImc()"> Calcular IMC </button>
+
+            
+        </section>
+        <p>Seu índice e massa corporal é: <span id="resultado"></span></p>
+    </section>
+
+    <!-- </form> -->
+
+    <footer id="contact">
+        <h3>Contatos:</h3>
+        <ul>
+            <li>Instagram: Lu_felipe05</li>
+            <li>Telefone: (51) 99653-7087</li>
+        </ul>
+
+       <p> &copy;Todos direitos reservados | Novembro 2024</p>
+
+    </footer>
+
+    <script>
+        function calcImc() {
+            const altura = parseFloat(document.getElementById("altura").value);
+            const peso = parseFloat(document.getElementById("peso").value);
+
+            const resultado = peso / (altura ** 2);
+
+            document.getElementById("resultado").textContent = resultado.toFixed(2);
+
+
+        }
+    </script>
+
+</body>
+
+</html>
